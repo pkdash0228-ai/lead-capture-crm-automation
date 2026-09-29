@@ -1,0 +1,13 @@
+services:
+  lead-crm:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - lead_data:/app/data
+    environment:
+      DATABASE_PATH: /app/data/lead_capture.db
+volumes:
+  lead_data:

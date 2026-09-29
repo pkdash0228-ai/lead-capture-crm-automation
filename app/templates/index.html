@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lead studio · Northstar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/chat.css">
+</head>
+<body class="capture-page">
+  <header class="top"><a class="brand" href="/"><span class="brand-mark">N</span><span>NORTHSTAR<small>RELATIONSHIP OS</small></span></a><nav><a class="active" href="/">Lead studio</a><a href="/dashboard">Pipeline</a></nav><div class="top-note"><span class="online-dot"></span> ALL SYSTEMS READY</div></header>
+  <main class="hero">
+    <section class="intro">
+      <div class="intro-kicker"><span>01</span> / YOUR NEXT CUSTOMER</div>
+      <h1>Good leads.<br><em>Better follow-through.</em></h1>
+      <p class="sub">A calmer way to turn a first hello into your next great partnership. Add a person to your orbit and keep the momentum going.</p>
+      <div class="orbit-card"><div class="orbit-graphic"><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><span class="orbit-core">✳</span><span class="orbit-node node-a"></span><span class="orbit-node node-b"></span><span class="orbit-node node-c"></span></div><div><span class="mini-label">THE NORTHSTAR METHOD</span><p>Capture the context.<br><strong>Make the connection.</strong></p></div></div>
+      <div class="hero-foot"><span>01 — CAPTURE</span><span>02 — CONNECT</span><span>03 — GROW</span></div>
+    </section>
+    <section class="card form-card">
+      <div class="form-head"><div><span class="mini-label">LEAD INTAKE / 001</span><h2>Let’s meet someone new.</h2></div><span class="form-badge">↗ OPEN</span></div>
+      <p class="form-intro">A little context makes a thoughtful introduction.</p>
+      <form id="lead-form">
+        <div class="field-row"><label>FULL NAME<input name="name" required placeholder="Taylor Morgan" maxlength="120" autocomplete="name"></label><label>COMPANY<input name="company" required placeholder="Studio or company" maxlength="160" autocomplete="organization"></label></div>
+        <label>WORK EMAIL<input name="email" type="email" required placeholder="taylor@company.com" maxlength="254" autocomplete="email"></label>
+        <label>WHAT’S ON THEIR MIND?<textarea name="message" rows="4" required placeholder="Goals, questions, a project they’re exploring…" maxlength="5000"></textarea></label>
+        <button type="submit">Add to your pipeline <span>↗</span></button><p id="form-message" class="message" role="status"></p>
+        <p class="privacy"><span>✳</span> Contact details stay within your workspace.</p>
+      </form>
+    </section>
+    <section class="card import-card"><div class="import-icon">⇧</div><div class="import-copy"><span class="mini-label">BRING YOUR PEOPLE</span><h2>Import a contact list</h2><p class="muted">CSV format · name, email, company, message</p></div><form id="csv-form"><label class="file-label">Choose a CSV file<input type="file" name="file" accept=".csv,text/csv" required></label><button type="submit" class="secondary">Import <span>↗</span></button><p id="csv-message" class="message" role="status"></p></form></section>
+  </main>
+  <footer><span>NS / NORTHSTAR RELATIONSHIP OS</span><span>MAKE ROOM FOR WHAT’S NEXT <b>✳</b></span></footer>
+  <script src="/static/app.js"></script><script src="/static/chat.js"></script>
+</body>
+</html>

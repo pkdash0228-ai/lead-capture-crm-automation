@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pipeline · Northstar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/chat.css">
+</head>
+<body class="dashboard-page">
+  <header class="top"><a class="brand" href="/"><span class="brand-mark">N</span><span>NORTHSTAR<small>RELATIONSHIP OS</small></span></a><nav><a href="/">Lead studio</a><a class="active" href="/dashboard">Pipeline</a></nav><div class="top-note"><span class="online-dot"></span> WORKSPACE LIVE</div></header>
+  <main class="dashboard">
+    <section class="dash-title"><div><div class="intro-kicker"><span>YOUR SPACE</span> / PIPELINE OVERVIEW</div><h1>People make<br><em>the whole thing work.</em></h1><p class="muted">Your relationships, sorted. Your next move, a little clearer.</p></div><a class="button-link" href="/">＋ <span>New contact</span></a></section>
+    <section class="pulse-panel"><div class="pulse-copy"><span class="mini-label">A MOMENT TO CHECK IN</span><h2>Every good conversation<br>has a next step.</h2><p>Keep your pipeline moving by following up with the people who are ready to hear from you.</p><a href="#lead-directory">View your contacts <span>↓</span></a></div><div class="pulse-art"><div class="pulse-ring ring-one"></div><div class="pulse-ring ring-two"></div><div class="pulse-ring ring-three"></div><div class="pulse-center">NS</div><span class="pulse-spark spark-one">✳</span><span class="pulse-spark spark-two">✳</span><span class="pulse-tag">STAY IN ORBIT</span></div><div class="pulse-side"><span class="mini-label">THE PIPELINE</span><strong>01<span> / 03</span></strong><p>Capture → Connect → Grow</p></div></section>
+    <section class="stats-intro"><div><span class="mini-label">THE NUMBERS, AT A GLANCE</span><h2>Pipeline pulse</h2></div><span class="live-label"><span class="online-dot"></span> UPDATING LIVE</span></section>
+    <section id="stats" class="stats-grid"></section>
+    <section id="lead-directory" class="table-card leads-card"><div class="table-heading"><div><span class="mini-label">THE PEOPLE BEHIND THE PIPELINE</span><h2>Your contacts</h2><p class="section-note">Search your network or filter by where things stand.</p></div><div class="filters"><label class="search-box"><span>⌕</span><input id="search" placeholder="Find someone…" aria-label="Search leads"></label><select id="status-filter" aria-label="Filter by status"><option value="">Every stage</option><option>New</option><option>Contacted</option><option>Qualified</option><option>Converted</option><option>Lost</option></select></div></div><div class="table-wrap"><table><thead><tr><th>PERSON</th><th>EMAIL</th><th>COMPANY</th><th>ORIGIN</th><th>STAGE</th><th>JOINED</th></tr></thead><tbody id="leads-body"></tbody></table></div><p id="empty" class="empty" hidden>No leads match your search.</p></section>
+    <section class="table-card logs-card"><div class="table-heading"><div><span class="mini-label">THE PAPER TRAIL</span><h2>Latest signals</h2></div><span class="activity-note">New contacts and delivery notes</span></div><div id="logs" class="logs-list"></div></section>
+    <footer><span>NS / NORTHSTAR RELATIONSHIP OS</span><span>KEEP GOOD PEOPLE CLOSE <b>✳</b></span></footer>
+  </main>
+  <script src="/static/app.js"></script><script src="/static/chat.js"></script>
+</body>
+</html>
